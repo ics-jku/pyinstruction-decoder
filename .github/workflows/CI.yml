@@ -134,11 +134,11 @@ jobs:
     needs: [linux, windows, macos, sdist]
     permissions:
       id-token: write
+    environment: pypi
     steps:
       - uses: actions/download-artifact@v4
       - name: Publish to PyPI
         uses: PyO3/maturin-action@v1
         with:
-          environment: pypi
           command: upload
           args: --non-interactive --skip-existing wheels-*/*
