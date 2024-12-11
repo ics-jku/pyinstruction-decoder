@@ -1,4 +1,4 @@
-use std::{collections::HashSet, env, path::PathBuf, vec};
+use std::{collections::HashSet, env, vec};
 
 use instruction_decoder::Decoder;
 use pyo3::{exceptions::PyValueError, prelude::*};

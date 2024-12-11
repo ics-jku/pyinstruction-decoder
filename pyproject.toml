@@ -16,6 +16,9 @@ dynamic = ["version"]
 "Source Code" = "https://github.com/ics-jku/pyinstruction-decoder"
 Issues = "https://github.com/ics-jku/pyinstruction-decoder/issues"
 
+[project.scripts]
+rvdecode = "pyinstruction_decoder:_rvdecode"
+
 [tool.maturin]
 module-name = "pyinstruction_decoder._pyinstruction_decoder"
 python-source = "python"
