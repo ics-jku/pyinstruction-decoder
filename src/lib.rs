@@ -12,7 +12,6 @@ extern crate load_file;
 fn pyinstruction_decoder(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_class::<PyDecoder>()?;
     m.add_function(wrap_pyfunction!(get_riscvdecoder, m)?)?;
-    m.add_function(wrap_pyfunction!(get_cwd, m)?)?;
     Ok(())
 }
 
@@ -49,11 +48,6 @@ impl PyDecoder {
             Err(s) => Err(PyValueError::new_err(s)),
         }
     }
-}
-
-#[pyfunction]
-fn get_cwd() -> std::io::Result<PathBuf> {
-    env::current_dir()
 }
 
 #[pyfunction]

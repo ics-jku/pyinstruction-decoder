@@ -22,4 +22,3 @@ python-source = "python"
 bindings = "pyo3"
 compatability = "manylinux2014"
 features = ["pyo3/extension-module"]
-data = "pyinstruction_decoder._pyinstruction_decoder.data"
