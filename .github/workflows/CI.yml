@@ -141,7 +141,7 @@ jobs:
         uses: PyO3/maturin-action@v1
         with:
           command: upload
-          args: -r testpypi --non-interactive --skip-existing wheels-*/*
+          args: -rtestpypi --non-interactive --skip-existing wheels-*/*
 
   release:
     name: Release
