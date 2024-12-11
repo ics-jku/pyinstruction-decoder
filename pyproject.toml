@@ -12,6 +12,8 @@ classifiers = [
 ]
 dynamic = ["version"]
 [tool.maturin]
+module-name = "pyinstruction_decoder._pyinstruction_decoder"
+python-source = "python"
 bindings = "pyo3"
 compatability = "manylinux2014"
 features = ["pyo3/extension-module"]
