@@ -5,7 +5,7 @@ import argparse as _argparse
 import sys as _sys
 
 
-_os.environ["PYINSTRUCTION_DECODER_TOMLPATH"] = str(_resources.files(_pyinstruction_decoder).joinpath('toml/'))
+_os.environ["PYINSTRUCTION_DECODER_TOMLPATH"] = str(_resources.files(__package__).joinpath('toml/'))
 __doc__ = _pyinstruction_decoder.__doc__
 if hasattr(_pyinstruction_decoder, "__all__"):
     __all__ = _pyinstruction_decoder.__all__
