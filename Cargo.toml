@@ -9,7 +9,7 @@ name = "pyinstruction_decoder"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = "0.23.3"
+pyo3 = "0.24.1"
 regex = "1.11.1"
 load_file = "1.0.1"
 instruction-decoder = { path = "instruction-decoder" }
